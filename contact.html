@@ -3,46 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Nessa's Bakery Delight for inquiries, orders, or custom cakes.">
+    <meta name="description" content="Contact Nessa's Local Bakery for orders, inquiries, and more.">
     <meta name="author" content="Vannessa Flores">
-    <meta name="keywords" content="contact, order cakes, cupcakes, Nessa's Bakery">
-    <title>Contact Us - Nessa's Bakery Delight</title>
+    <meta name="keywords" content="contact, bakery, Nessa's Local Bakery, orders, inquiries">
+    <title>Contact Us - Nessa's Local Bakery</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Navigation -->
+    <!-- Header Section -->
+    <header>
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you! Whether you're looking to place an order or have any questions about our menu, get in touch with us.</p>
+    </header>
+
+    <!-- Main Section with Contact Form -->
+    <main>
+        <section>
+            <h2>Our Location</h2>
+            <p>Visit us at:</p>
+            <address>
+                Nessa's Local Bakery<br>
+                123 Sweet Street<br>
+                Guadalupe, AZ 85283<br>
+                <a href="mailto:info@nessaslocalbakery.com">info@nessaslocalbakery.com</a>
+            </address>
+
+            <h2>Contact Form</h2>
+            <p>Fill out the form below, and we'll get back to you as soon as possible!</p>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+
+    <!-- Navigation Section -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <main>
-        <h1>Contact Us</h1>
-        <p>If you have any questions or would like to place an order, feel free to reach out:</p>
-        <p>Email: <a href="mailto:info@Nessasbakerydelight.com">info@bakerydelight.com</a></p>
-        <p>Phone: 555-1234</p>
-
-        <form action="#" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            
-            <button type="submit">Send Message</button>
-        </form>
-    </main>
-
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Nessa's Bakery Delight</p>
+        <p>&copy; 2024 Vannessa Flores. All rights reserved.</p>
     </footer>
 
 </body>
