@@ -1,151 +1,88 @@
-/* General Reset (resets default browser styles) */
-* {
+/* Global Styles for the Contact Page */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4; /* Light background color */
 }
 
-/* Body Styles */
-body {
-    font-family: Arial, sans-serif; /* Font for the entire page */
-    line-height: 1.6; /* Better line spacing for readability */
-    background-color: #fff8e1; /* Light background color */
-    color: #333; /* Dark text color for readability */
-    padding: 20px;
-}
-
-/* Header Styles */
-header {
-    background-color: #6f4f1f; /* Bakery-inspired brown color */
-    color: white;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-header h1 {
-    font-size: 2.5rem; /* Large title */
-}
-
-header p {
-    font-size: 1.2rem; /* Slightly smaller subtitle */
-}
-
-/* Navigation Styles */
 nav {
-    background-color: #f4a261; /* Light orange for the navigation */
+    background-color: #E5A16D; /* Warm brown, matching your brand color */
     padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
+    text-align: center;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+    list-style-type: none;
+    padding: 0;
 }
 
 nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
-nav a {
-    color: #fff;
+nav ul li a {
     text-decoration: none;
+    color: white;
     font-size: 1.1rem;
-    transition: color 0.3s;
 }
 
-nav a:hover {
-    color: #6f4f1f; /* Changes to the bakery color on hover */
-}
-
-/* Main Content Section */
 main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
     text-align: center;
-    margin-bottom: 20px;
+    color: #333;
 }
 
-main h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-main p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-}
-
-/* Image Styling */
-.images {
+form {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.images img {
-    max-width: 30%;  /* Limits the image width to 30% of the container */
-    height: auto;    /* Maintains aspect ratio */
-    border-radius: 10px; /* Optional: adds rounded corners */
-    border: 3px solid #6f4f1f; /* Optional: adds border around images */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds shadow */
+form label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
 }
 
-@media (max-width: 768px) {
-    .images img {
-        max-width: 90%;  /* Larger images on smaller screens */
-    }
+form input, form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
 }
 
-/* Footer Styles */
+form button {
+    background-color: #E5A16D; /* Match the header */
+    color: white;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #D48C58; /* Slightly darker brown on hover */
+}
+
 footer {
-    background-color: #6f4f1f; /* Matching bakery color */
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
-    border-radius: 5px;
-}
-
-/* Section Heading Styles */
-h2 {
-    color: #f4a261; /* Orange color for section titles */
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-/* Paragraph Styles */
-p {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-/* Accessibility and Color Contrast */
-a {
-    color: #6f4f1f;
-}
-
-a:visited {
-    color: #b5651d; /* A different color for visited links */
-}
-
-a:hover {
-    color: #f4a261; /* Highlight links on hover */
-}
-
-/* About Page Specific Styles */
-.about-main {
-    text-align: center;
-}
-
-.about-main h2 {
-    font-size: 2.2rem;
-    margin-bottom: 15px;
-}
-
-.about-main p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
