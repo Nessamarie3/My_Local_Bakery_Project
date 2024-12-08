@@ -1,0 +1,108 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header and Footer styles */
+header, footer {
+    background-color: #f4a300; /* warm yellow-orange */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    font-size: 0.8em;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: #333;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #f4a300;
+}
+
+/* Main content styles */
+h1, h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.product-gallery img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* Form styling */
+form {
+    background-color: white;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #f4a300;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #f49000;
+}
+
+/* Table styles */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f4a300;
+    color: white;
+}
