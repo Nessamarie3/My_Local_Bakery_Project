@@ -1,108 +1,151 @@
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+/* General Reset (resets default browser styles) */
+* {
     margin: 0;
     padding: 0;
-    color: #333;
+    box-sizing: border-box;
 }
 
-/* Header and Footer styles */
-header, footer {
-    background-color: #f4a300; /* warm yellow-orange */
-    color: white;
-    text-align: center;
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif; /* Font for the entire page */
+    line-height: 1.6; /* Better line spacing for readability */
+    background-color: #fff8e1; /* Light background color */
+    color: #333; /* Dark text color for readability */
     padding: 20px;
 }
 
-footer {
-    font-size: 0.8em;
+/* Header Styles */
+header {
+    background-color: #6f4f1f; /* Bakery-inspired brown color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem; /* Large title */
+}
+
+header p {
+    font-size: 1.2rem; /* Slightly smaller subtitle */
 }
 
 /* Navigation Styles */
+nav {
+    background-color: #f4a261; /* Light orange for the navigation */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
 nav ul {
     list-style: none;
-    padding: 0;
-    background-color: #333;
-    margin: 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline-block;
     margin: 0 15px;
 }
 
-nav ul li a {
-    color: white;
+nav a {
+    color: #fff;
     text-decoration: none;
-    padding: 10px 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    background-color: #f4a300;
+nav a:hover {
+    color: #6f4f1f; /* Changes to the bakery color on hover */
 }
 
-/* Main content styles */
-h1, h2 {
-    font-size: 2em;
-    color: #333;
+/* Main Content Section */
+main {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.product-gallery img {
-    width: 30%;
-    margin: 10px;
-    border-radius: 8px;
-}
-
-/* Form styling */
-form {
-    background-color: white;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 500px;
-    border-radius: 8px;
-}
-
-form label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
+main h2 {
+    font-size: 2rem;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
-form button {
-    background-color: #f4a300;
+main p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Image Styling */
+.images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.images img {
+    max-width: 30%;  /* Limits the image width to 30% of the container */
+    height: auto;    /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    border: 3px solid #6f4f1f; /* Optional: adds border around images */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds shadow */
+}
+
+@media (max-width: 768px) {
+    .images img {
+        max-width: 90%;  /* Larger images on smaller screens */
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #6f4f1f; /* Matching bakery color */
     color: white;
-    padding: 10px 20px;
-    border: none;
+    text-align: center;
+    padding: 10px;
     border-radius: 5px;
 }
 
-form button:hover {
-    background-color: #f49000;
+/* Section Heading Styles */
+h2 {
+    color: #f4a261; /* Orange color for section titles */
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
-/* Table styles */
-table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
+/* Paragraph Styles */
+p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
 }
 
-table th, table td {
-    border: 1px solid #ddd;
-    padding: 10px;
+/* Accessibility and Color Contrast */
+a {
+    color: #6f4f1f;
+}
+
+a:visited {
+    color: #b5651d; /* A different color for visited links */
+}
+
+a:hover {
+    color: #f4a261; /* Highlight links on hover */
+}
+
+/* About Page Specific Styles */
+.about-main {
     text-align: center;
 }
 
-table th {
-    background-color: #f4a300;
-    color: white;
+.about-main h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.about-main p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
